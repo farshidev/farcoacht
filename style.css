@@ -3,9 +3,18 @@
     width: 100%;
 } */
 
+@font-face {
+  font-family: iransans;
+  src: url(fonts/manototv\ -\ kalamefont\ Regular.ttf) format("ttf");
+}
+html{
+  font-size: 16px;
+}
 body {
     background-color: white;
     margin: 0;
+    font-family: iransans;
+    /* direction: rtl; */
 }
 header {
     background-color: #21AA58;
@@ -66,3 +75,79 @@ nav {
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #21AA58;
+    background-color: rgba(255,255,255,1);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    padding-right: 25px;
+    width: 100%;
+    text-align: right;
+    list-style-type: none;
+    font-size: 1.5rem;
+    /* margin-top: 30px; */
+  }
+
+
+  
+
+  .overlay a {
+    padding-top: 18px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 450;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+
+
+    .overlay a:hover, .overlay a:focus {
+      color: #21AA58;
+    }
+    
+
+    .overlay img {
+      position: absolute;
+      top: 25px;
+      left: 10px;
+      font-size: 60px;
+    }
+
+    #closebutton {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 60px;
+      color:black;
+    }
+
+ 
+    #closebutton:hover {
+      color: #21AA58;
+    }
+
+    p {
+      margin: 10px;
+      text-align: center;
+      font-family: iransans;
+    }
+    
+
+    i:hover {
+      cursor: pointer;
+    }
